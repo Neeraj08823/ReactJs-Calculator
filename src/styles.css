@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px;
+}
+
+.display {
+  padding: 16px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 14px;
+  color: grey;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+button :hover {
+  opacity: 0.9;
+}
+
+.operator {
+  display: flex;
+}
+.operator button {
+  flex: 1 1 0%;
+  background-color: indianred;
+  font-weight: 700;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: gray;
+}
